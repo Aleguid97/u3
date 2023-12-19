@@ -24,7 +24,7 @@ const MyComponent = () => {
                 <Card.Title>{card.title}</Card.Title>
                 <Card.Text>{card.text}</Card.Text>
                 <h3>{card.price}€</h3>
-                <Button variant="primary"> Acquista </Button>
+                <Button variant="primary" className='button1'> Acquista </Button>
               </Card.Body>
             </Card>
           </Col>

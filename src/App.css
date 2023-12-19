@@ -16,8 +16,12 @@ button {
   padding-block: 1em;
   margin: 2em;
 }
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .button1 {
-  background-color: #61dafb;
+  background-color: #262d35;
   border: none;
   cursor: pointer;
 }
@@ -58,4 +62,8 @@ span {
 blockquote {
   font-size: small;
   font-style: italic;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
