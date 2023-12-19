@@ -1,21 +1,25 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import logo from './Gruss_vom_Krampus.jpg';
 import './App.css';
-import ComponentButton from './components/ComponentButton';
-import ComponentUl from './components/ComponentUl';
+import ComponentCard from './components/ComponentCard';
+import MyNavbar from "./components/ComponentNav"; 
+import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='Auguri'>
-          Cattivo Natale.
-        </p>
-      <ComponentButton content='Cliccami'
-      className='button1'/>
-      <ComponentUl className='antiNatale'/>
-
+        <MyNavbar/>
       </header>
+      <>
+      <ComponentCard/>
+      <ComponentCard/>
+      </>
+      <footer className="container">
+        <MyFooter/>
+
+      </footer>
+      
     </div>
   );
 }
