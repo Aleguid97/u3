@@ -48,11 +48,12 @@ button:hover {
 
 &::-webkit-scrollbar-thumb {
   background-color: #262d35;
-  border-radius: 6px; 
+  border-radius: 6px;
 }
 
 &::-webkit-scrollbar-track {
-  background-color: #ffffff; 
+  background-color: #ffffff;
+}
 span {
   font-style: italic;
   font-size: smaller;
