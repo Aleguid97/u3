@@ -1,6 +1,7 @@
 import logo from './Gruss_vom_Krampus.jpg';
 import './App.css';
 import ComponentButton from './components/ComponentButton';
+import ComponentUl from './components/ComponentUl';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         </p>
       <ComponentButton content='Cliccami'
       className='button1'/>
-      <ComponentButton content='Su Cliccami'
-      className='button2'/>
+      <ComponentUl className='antiNatale'/>
+
       </header>
     </div>
   );
