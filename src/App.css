@@ -43,17 +43,16 @@ button:hover {
 }
 
 &::-webkit-scrollbar {
-  width: 12px; /* Larghezza della scrollbar per i browser WebKit (Chrome/Safari) */
+  width: 12px;
 }
 
 &::-webkit-scrollbar-thumb {
-  background-color: #262d35; /* Colore della barra */
-  border-radius: 6px; /* Bordo arrotondato della barra */
+  background-color: #262d35;
+  border-radius: 6px; 
 }
 
 &::-webkit-scrollbar-track {
-  background-color: #ffffff; /* Colore dello sfondo */
-}
+  background-color: #ffffff; 
 span {
   font-style: italic;
   font-size: smaller;
