@@ -12,11 +12,10 @@ function App() {
       <header className="App-header">
         <MyNavbar/>
       </header>
-      <>
+      
       <MyAlert/>
       <ComponentCard/>
-      <ComponentCard/>
-      </>
+      
       <footer className="container">
         <MyFooter/>
 
