@@ -22,18 +22,20 @@ const MyComponent = () => {
         {filteredBooks.map((book) => (
           <Col key={book.id} sm={4}>
             <Card
-              className={`h-100 g-3 ${selectedBook && selectedBook.id === book.id ? 'selected' : ''}`}
+              className={`g-3 ${selectedBook && selectedBook.id === book.id ? 'selected' : ''}`}
               style={{ marginBottom: '20px', marginTop: '20px' }}
               onClick={() => handleBookSelect(book)}
             >
-              <img src={book.img} className="card-img-top" alt="..." />
+              <img src={book.img} className="card-img-top" alt="..."/>
               <Card.Body className=' mb-4'>
                 <Card.Title>{book.title}</Card.Title>
                 <Card.Text>{book.text}</Card.Text>
                 <h3>{book.price}€</h3>
-                <Button variant="primary" className='button1'>
-                  Acquista
-                </Button>
+                <div class="btn-group mt-3" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-sm btn-primary rounded-pill">Buy</button>
+  <button type="button" class="btn btn-sm btn-dark mx-2 rounded-pill">Add Comment</button>
+  <button type="button" class="btn btn-sm btn-info rounded-pill">View Comments</button>
+</div>
               </Card.Body>
             </Card>
           </Col>
