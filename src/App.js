@@ -4,6 +4,7 @@ import MyAlert from "./components/MyAllert";
 import ComponentCard from './components/ComponentCard';
 import MyNavbar from "./components/ComponentNav"; 
 import MyFooter from "./components/MyFooter";
+import CommentArea from "./components/CommentArea";
 function App() {
   return (
     <div className="App container">
@@ -12,7 +13,9 @@ function App() {
         <MyNavbar/>
       </header>
       <MyAlert/>
+      
       <ComponentCard/>
+      <CommentArea/>
      
      
       
