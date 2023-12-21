@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Button } from 'react-bootstrap';
-import BookData from "../data/fantasy.json";
+import SearchBar from './SearchBar';  // Assicurati di utilizzare il percorso corretto per il tuo componente SearchBar
+import BookData from '../data/fantasy.json';
 
 const MyComponent = () => {
-  // Declare a state variable to manage the selected book
   const [selectedBook, setSelectedBook] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
-  // Function to handle the book selection
   const handleBookSelect = (book) => {
     setSelectedBook(book);
   };
 
+  const filteredBooks = BookData.filter((book) =>
+    book.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
+      <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
       <Row>
-        {BookData.map((book) => (
+        {filteredBooks.map((book) => (
           <Col key={book.id} sm={4}>
             <Card
               className={`h-100 g-3 ${selectedBook && selectedBook.id === book.id ? 'selected' : ''}`}

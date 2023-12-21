@@ -15,7 +15,6 @@ function App() {
       
       <MyAlert/>
       <ComponentCard/>
-      
       <footer className="container">
         <MyFooter/>
 
